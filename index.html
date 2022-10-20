@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS DAY 2</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>
-                Berbagai Legend di Apex Legends
-            </h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS day 2</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+     <div class="container">
+      <header>
+        <h1>POPULAR PRODUCT</h1>
+      </header>
+      <main>
+        <section class="sec1">
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/google-pixel7-pro-new.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Google Pixel 7 Pro</b></h4>
+              <h5>Rp12.999.999</h5>
+            </div>
           </div>
-          <div class="awal">
-            <p>
-                Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One in February 2019, for Nintendo Switch in March 2021, and for PlayStation 5 and Xbox Series X/S in March 2022. A mobile version of the game designed for touchscreens titled Apex Legends Mobile was released in May 2022 on Android and iOS. The game supports cross-platform play, excluding the aforementioned mobile platforms.
-            </p>
+          <div class="card">
+            <div class="header">
+              <img class="laptop" src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Lenovo Legion 7</b></h4>
+              <h5>Rp23.499.999</h5>
+            </div>
           </div>
-            <div class="card">
-                <img src="https://esports.id/img/article/883220220819100753.png" alt="Avatar" class="legend">
-                <div class="container">
-                  <h4><b>Loba</b></h4>
-                  <h5>Translocating Thief</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos qui? Accusamus dignissimos ducimus non!</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ-nhuYCFbwP9zqh2a_Kz4m_VHFegasIE9gvtK9ooowfrIMi7m1A83rl8qSUH7KP9z8kw&usqp=CAU" alt="Avatar" class="legend">
-                <div class="container">
-                  <h4><b>Wraith</b></h4>
-                  <h5>Interdimensional Skirmisher</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, architecto sapiente officia culpa ipsum voluptatum?</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="https://asset.vg247.com/ash-apex-legends_4IkmdE7.png/BROK/thumbnail/1600x900/quality/100/ash-apex-legends_4IkmdE7.png" alt="Avatar" class="legend" >
-                <div class="container">
-                  <h4><b>Ash</b></h4>
-                  <h5>Incisive Instigator</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestias modi voluptatibus provident, neque ipsam.</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="https://www.svg.com/img/gallery/apex-legends-devs-break-silence-on-accidental-bangalore-nerf/intro-1615827372.jpg" alt="Avatar" class="legend">
-                <div class="container">
-                  <h4><b>Bangalore</b></h4>
-                  <h5>Professional Soldier</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat minus repellat similique aliquid dolorum?</p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="https://media.pocketgamer.com/artwork/ra-87587-1627924279/apex-legends-mobile-wattson-cover_jpg_820.jpg" alt="Avatar" class="legend">
-                <div class="container">
-                  <h4><b>Wattson</b></h4>
-                  <h5>Static Defender</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, error quasi est eum molestias provident?</p>
-                </div>
-              </div>
-              <div class="cardvalkyrie">
-                <img src="https://assets2.rockpapershotgun.com/apex-legends-valkyrie-close.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/apex-legends-valkyrie-close.jpg" alt="Avatar" class="legend">
-                <div class="container">
-                  <h4><b>Valkyrie</b></h4>
-                  <h5>Winged Avenger</h5>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse repellendus aspernatur repellat mollitia velit?</p>
-                </div>
-              </div>
-       
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/oneplus-10t-5g.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>OnePlus 10T</b></h4>
+              <h5>Rp14.499.999</h5>
+            </div>
+          </div>
+        </section>
+        <section class="sec2">
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>IPhone 14 Pro</b></h4>
+              <h5>Rp15.999.999</h5>
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              <img class="laptop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLS8zTtbg6WJwwvLPjji-tl2zcnWXk9VJhA&usqp=CAU" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>MacBook Air M2 (2022)</b></h4>
+              <h5>Rp20.999.999</h5>
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x4-gt.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Xiaomi Poco X4 GT</b></h4>
+              <h5>Rp9.999.999</h5>
+            </div>
+          </div>
+        </section>
+        <section class="sec3">
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold4-5g.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Samsung Galaxy Z Fold4</b></h4>
+              <h5>Rp23.999.999</h5>
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              <img src="https://dlcdnwebimgs.asus.com/gain/a228c44d-7572-4c78-96b6-c8e710d26131/" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Asus Vivobook</b></h4>
+              <h5>Rp13.499.999</h5>
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              <img src="https://fdn2.gsmarena.com/vv/bigpic/oppo-reno8-4g.jpg" alt="">
+            </div>
+            <div class="isi">
+              <h4><b>Oppo Reno8 4G</b></h4>
+              <h5>Rp7.999.999</h5>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+         <a href="about.html"><button class="button">About Us</button></a>
+         <a href="contact.html"><button class="button">Contacts</button></a>
+         <p>fadel@upn_zetta</p>
+      </footer>
     </div>
-    
-</body>
+   </body>
 </html>
