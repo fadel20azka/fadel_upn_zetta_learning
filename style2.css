@@ -1,0 +1,87 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ .container{
+        background-color: antiquewhite;
+        margin-top: 1rem;
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-top: 15px;
+        border-radius: 30px;
+        border: 3px solid black;
+        margin-bottom: -10px; 
+       
+}
+
+ body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .title {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+ }
+
+ .card {
+    background-color: coral;
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px 2px rgba(56, 56, 56, 0.468);
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+ }
+ p{
+    text-align: center;
+}
+
+.card > h3 {
+    text-align: center;
+ }
+ 
+
+ article section{
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    text-align: left;
+    background-color: whitesmoke;
+    height: 180px;
+    width: fit-content;
+    overflow-y: scroll;
+    margin-top: -10px;
+ }
+
+.mb{
+    margin-bottom: 20px;
+}
+ article section ul li {
+    overflow: hidden;
+ }
+
+footer {
+    width: auto;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+ }
+
+ footer button{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(225, 224, 224);
+ }
+
+ button:hover{
+    border: solid;
+    border-width: 2px;
+ }
