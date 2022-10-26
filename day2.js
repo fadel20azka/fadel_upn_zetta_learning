@@ -4,39 +4,63 @@
  * @param {Number} tax
  * @param {Number} stock
  * @param {Number} order
+ * @param {Number} credit
  */
 
 
- console.log("Harga Buku : ")
- function transaction(book, discount, tax, stock, order){
+ function transaction(book, discount, tax, stock, order, credit){
     let result = 0;
+    const title = book.title;
+    const price = book.price;
+    const totalDiscount = price * (discount/100);
+    const priceAfterDiscount = price - totalDiscount;
+    const totalTax = priceAfterDiscount * (tax/100);
+    const priceAfterTax = priceAfterDiscount + totalTax;
     for(let loopIndex = 0;  loopIndex < order; loopIndex++){
-        if(book && book.price && (loopIndex < stock)){
-            const title = book.title;
-            const price = book.price;
-            const totalDiscount = price * (discount/100);
-            const priceAfterDiscount = price - totalDiscount;
-            const totalTax = priceAfterDiscount * (tax/100);
-            const priceAfterTax = priceAfterDiscount + totalTax;
+        if(book && book.price && loopIndex < order){
             result += priceAfterTax;
-    
-            console.group();
-            console.log('Judul : ',title,'*',loopIndex+1);
-            console.log('Original Price : ', price);
-            console.log('Discount Amount : ', totalDiscount);
-            console.log('Price After Discount : ', priceAfterDiscount);
-            console.log('Tax Amount : ', totalTax);
-            console.log('Price After Tax : ', priceAfterTax);
-            console.log();
-            console.groupEnd();
-        }else{
-            console.log('Stok habis : ');
+        }
+        else{
+            console.log('Run out of stock :(');
             break;
         }
-        
     }
-    console.log('Total harga :  ', result)
+        console.group();
+        console.log('Judul :',title);
+        console.log('Order Amount : ',order,' items');
+        console.log('Original Price : ', price);
+        console.log('Discount Amount : ', totalDiscount);
+        console.log('Price After Discount : ', priceAfterDiscount);
+        console.log('Tax Amount : ', totalTax);
+        console.log('Price After Tax : ', priceAfterTax);
+        console.log('Remaining Stock : ', stock - order)
+        console.log();
+        console.groupEnd();
+        if (stock - order === 0) {
+            console.log('Stok sudah habis');
+          }else {
+            console.log('Stok sisa ',stock - order, 'Anda bisa membeli lagi');
+          }
+    
+        
+    console.log('Your Total Price Is : ', result)
     console.log();
+
+    let creditPerMonth = result / credit;
+    let creditAmount = [];
+    let index = 0;
+    
+    console.log('Pembayaran cicilan sebanyak' , credit, 'kali (2 tahun) sebanyak', creditPerMonth,'per bulan');
+    while(index<credit){
+        creditAmount.push({
+            cicilan: index + 1,
+            amount: creditPerMonth,
+        })
+        index++;
+    }
+    console.group();
+    console.log(Array.from(creditAmount));
+    console.groupEnd();
 }
 
-transaction({title: "How to C++", price:40000, publicity: true}, 30, 10, 5, 10);
+transaction({title: "How to C++", price:40000, publicity: true}, 30, 10, 10,5,24);
