@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Modul2Component implements OnInit {
 
+  profil = ['ahmad','rizal','kimin'];
+  currentStatus1 = 'offline';
+  currentStatus2 = 'offline';
+  currentStatus3 = 'offline';
+  status = true;
+
+  changeStatus1(){
+    this.currentStatus1 = "online";
+  }
+  changeStatus2(){
+    this.currentStatus2 = "online";
+  }
+  changeStatus3(){
+    this.currentStatus3 = "online";
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
