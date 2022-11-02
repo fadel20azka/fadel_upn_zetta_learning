@@ -1,14 +1,10 @@
-<!-- <button class="btn btn-primary" 
-[disabled]="!allowNewServer"
-(click)="">Add Server</button>
-<app-modul1></app-modul1>
-<app-modul1></app-modul1> -->
 <div class="row">
     <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">{{profil[0]}}</h5>
           <p class="card-text">Your status is currently</p> <p [ngClass]="{online:currentStatus1==='online'}">{{currentStatus1}}</p>
           <button class="btn btn-primary" (click)="changeStatus1()">Go Online!</button>
+          <button class="btn btn-primary off " (click)="changeStatus5()">Go Offline!</button>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -16,16 +12,28 @@
           <h5 class="card-title">{{profil[1]}}</h5>
           <p class="card-text">Your status is currently</p> <p [ngClass]="{online:currentStatus2==='online'}">{{currentStatus2}}</p>
           <button class="btn btn-primary" (click)="changeStatus2()">Go Online!</button>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{profil[2]}}</h5>
-          <p class="card-text">Your status is currently</p><p [ngClass]="{online:currentStatus3==='online'}">{{currentStatus3}}</p>
-          <button class="btn btn-primary" (click)="changeStatus3()">Go Online!</button>
+          <button class="btn btn-primary off" (click)="changeStatus6()">Go Offline!</button>
         </div>
       </div>
     </div>
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{profil[2]}}</h5>
+            <p class="card-text">Your status is currently</p><p [ngClass]="{online:currentStatus3==='online'}">{{currentStatus3}}</p>
+            <button class="btn btn-primary" (click)="changeStatus3()">Go Online!</button>
+            <button class="btn btn-primary off" (click)="changeStatus7()">Go Offline!</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{profil[3]}}</h5>
+            <p class="card-text">Your status is currently</p> <p [ngClass]="{online:currentStatus4==='online'}">{{currentStatus4}}</p>
+            <button class="btn btn-primary" (click)="changeStatus4()">Go Online!</button>
+            <button class="btn btn-primary off" (click)="changeStatus8()">Go Offline!</button>
+        </div>
+        </div>
+      </div>
     
     
     
