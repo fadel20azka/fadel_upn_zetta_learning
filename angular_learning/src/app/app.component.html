@@ -1,9 +1,14 @@
+
 <div class="container">
+  <app-component2 (taskCreated)="onTaskAdded($event)"
+  (groupTaskCreated)="onGroupTaskAdded($event)">
+  </app-component2>
   <div class="row">
-      <div class="col-xs-12">
-        <h3 class="text-center">Using Data Binding and Structural Directives</h3>
-        <hr>
-<app-modul2></app-modul2>
-      </div>
+    <div class="col-xs-12">
+      <app-component1 *ngFor="let taskElement of taskElements"
+      [taskElement]="taskElement"></app-component1>
+    </div>
+         <button
+      class="btn btn-danger" (click)="onDestroy()">Clear</button>
   </div>
 </div>
