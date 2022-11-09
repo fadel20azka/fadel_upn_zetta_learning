@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Modul1Component } from './modul1/modul1.component';
-import { Modul2Component } from './modul2/modul2.component';
+import { ItemsComponent } from './items/items.component';
+import { ItemsInputComponent } from './items-input/items-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Modul1Component,
-    Modul2Component
+    ItemsComponent,
+    ItemsInputComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
