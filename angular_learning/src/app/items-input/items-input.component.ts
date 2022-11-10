@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./items-input.component.scss']
 })
 export class ItemsInputComponent implements OnInit {
-  @Input('taskElement') element: {type: string,name: string,content:string};
+  @Input('taskElement') 
+  element!: {type: string,name: string,content:string};
 
   constructor() { }
 
